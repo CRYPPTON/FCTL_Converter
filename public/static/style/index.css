@@ -1,0 +1,84 @@
+body{
+    color: white;
+    background-color: #222629;
+}
+
+nav {
+    border-left: #30490d solid 3px;
+    outline: solid #1b250c 3px ;
+    width: 20%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: #618930;
+    
+}
+
+.link_nav {
+    border-bottom: 1px solid #30490d;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    font-family: Ubuntu;
+    display: block;
+    padding: 20px;
+    font-weight: 700;
+    text-shadow: 2px 2px #000000;
+    text-align: center;
+    text-decoration: none;
+    color: #bcc2b5;
+}
+
+
+.link_nav:hover{
+    border-left: solid rgb(77, 151, 28) 1px;
+    border-bottom: solid rgb(32, 39, 32) 4px;
+    border-right: solid 6px rgba(22, 21, 21, 0.829);
+    border-radius: 4px;
+    background-color: #77ac2c;
+    color: #F2F3F5;
+}
+
+#app{
+    border-radius: 5%;
+    margin: 2% 35% 0px 15%;
+    background-color: #3c3f4156;;
+    text-align: center;
+    padding: 5%;
+    border: solid rgb(63, 62, 62) 1px;
+}
+
+
+
+#descr {
+    text-transform: capitalize;
+    margin-bottom: 20%;
+    padding: 30px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-family: monospace;
+    margin-top: 20%;
+    background-color: rgb(32, 30, 30);
+}
+
+#app a {
+
+    padding: 12px;
+    background-color: #8CC731;
+    border: solid #6A6E71 2px;
+    border-radius: 12px ;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family:-apple-system;
+    text-shadow: 2px 2px #09471c;
+    opacity: .5;
+}
+
+#app a:hover {
+    font-weight: 900;
+    border: solid #ffffff 3px;
+    background-color: #8CC731;
+    color: white;
+    opacity: 0.9;
+}
