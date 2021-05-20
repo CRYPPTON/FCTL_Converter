@@ -82,3 +82,20 @@ nav {
     color: white;
     opacity: 0.9;
 }
+
+
+table { 
+    margin-top: 50px;
+    font-size: 20px;
+    border-collapse: collapse; 
+    padding: 5px;
+    text-align: left;
+}
+tr { 
+    border: none; 
+}
+td {
+  border-bottom: solid 3px rgb(53, 50, 50); 
+  padding: 15px;
+  border-left: solid 1px rgb(58, 56, 56);
+}

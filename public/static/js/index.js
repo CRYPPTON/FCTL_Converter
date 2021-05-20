@@ -1,6 +1,6 @@
 import Home from "./page/Home.js";
 import About from "./page/About.js"
-
+import Contact from "./page/Contact.js"
 
 const navigate = url => {
     history.pushState(null, null, url);
@@ -15,7 +15,7 @@ const router = async () => {
     //  {path: "/fromLatintoCyrillic", page: () => console.log("Page: From Cyrillic to Latin")},
     //  {path: "/fromCyrillictoLatin", page: () => console.log("Page: From Latin to Cyrillic")},
         {path: "/about",               page: About},
-      /*  {path: "/contact",             page: () => console.log('Page: Contact')  }*/
+        {path: "/contact",             page: Contact}
     ];
 
     const selectRoute = routes.map(route => {
