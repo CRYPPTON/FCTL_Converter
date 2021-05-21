@@ -44,9 +44,9 @@ const router = async () => {
 
     const page = new match.route.page()
 
-    
+    console.log(match.route.path)
     document.querySelector("#app").innerHTML = await page.getHtml();
-    document.querySelector("#fctl").innerHTML = await page.convert();
+    if(match.route.path == '/fctl') document.querySelector("#fctl").innerHTML = await page.convert();
     
 }
 
