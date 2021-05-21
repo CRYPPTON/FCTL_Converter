@@ -4,7 +4,7 @@ import Contact from "./page/Contact.js"
 import Fctl from "./page/Fctl.js"
 import Fltc from "./page/Fltc.js"
 
-
+var textarea;
 
 
 const navigate = url => {
@@ -46,11 +46,15 @@ const router = async () => {
 
     console.log(match.route.path)
     document.querySelector("#app").innerHTML = await page.getHtml();
+    if(match.route.path == '/fltc') document.querySelector("#fltc").innerHTML = await page.convert();
     if(match.route.path == '/fctl') document.querySelector("#fctl").innerHTML = await page.convert();
+    textarea = document.querySelector("#fltc");
     
 }
 
+
 window.addEventListener("popstate",router)
+
 
 document.addEventListener("DOMContentLoaded", () => {
     document.body.addEventListener("click", e => {
@@ -61,5 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     router()
 })
+
 
 
