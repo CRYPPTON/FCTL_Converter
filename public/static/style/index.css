@@ -99,3 +99,9 @@ td {
   padding: 15px;
   border-left: solid 1px rgb(58, 56, 56);
 }
+
+
+textarea {
+    height: 400px;
+    width: 500px;
+}

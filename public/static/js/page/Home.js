@@ -12,7 +12,7 @@ export default class extends AbstractPage {
         <p id="descr">
          The program intended for converting text from Cyrillic to Latin, can also convert Latin to Cyrillic, it is up to you to decide        </p>
         <p>
-            <a href="/posts" data-link>Convert my text now</a>
+            <a href="/fctl" data-link>Convert my text now</a>
         </p>
     `;
     }

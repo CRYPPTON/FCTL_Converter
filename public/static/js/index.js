@@ -1,6 +1,11 @@
 import Home from "./page/Home.js";
 import About from "./page/About.js"
 import Contact from "./page/Contact.js"
+import Fctl from "./page/Fctl.js"
+import Fltc from "./page/Fltc.js"
+
+
+
 
 const navigate = url => {
     history.pushState(null, null, url);
@@ -11,11 +16,12 @@ const navigate = url => {
 const router = async () => {
     
     const routes = [
-        {path: "/",                    page: Home },
-    //  {path: "/fromLatintoCyrillic", page: () => console.log("Page: From Cyrillic to Latin")},
-    //  {path: "/fromCyrillictoLatin", page: () => console.log("Page: From Latin to Cyrillic")},
-        {path: "/about",               page: About},
-        {path: "/contact",             page: Contact}
+        {path: "/",         page: Home },
+        {path: "/about",    page: About},
+        {path: "/contact",  page: Contact},
+        {path: "/fctl",     page: Fctl},
+        {path: "/fltc",     page: Fltc},
+
     ];
 
     const selectRoute = routes.map(route => {
@@ -28,12 +34,13 @@ const router = async () => {
     let match = selectRoute.find(selectRoute => selectRoute.isSelected)
 
     if(!match){
+        alert("this page does not exist")
         match = {
             route: routes[0],
             isSelected: true
         }
     }
-    //console.log(match.route)
+    console.log(match.route)
 
     const page = new match.route.page()
 
@@ -51,3 +58,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     router()
 })
+
+
