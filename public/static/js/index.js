@@ -44,7 +44,10 @@ const router = async () => {
 
     const page = new match.route.page()
 
+    
     document.querySelector("#app").innerHTML = await page.getHtml();
+    document.querySelector("#fctl").innerHTML = await page.convert();
+    
 }
 
 window.addEventListener("popstate",router)
